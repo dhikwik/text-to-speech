@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" sizes="192x192" href="./background-image2.jpg">
+    <title>Text to Speech Converter</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="text-to-speech.css">
+
+    <script src="./text-to-speech.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter</h1>
+        <h3> Write down the text you want to hear by the beautiful voice of DoctorDoom</h3>
+        <p>Paste or type any stories you wanna hear, songs you wanna vibe ,scolding or motivation you wanna hear</p>
+        <textarea type="text-area" placeholder="Test it out!!!" class="text-input" id="textInput" name="text-input"></textarea>
+        <div class="button-section">
+        <button id="speakButton" class="btn btn-click" onclick="textToSpeech()">Click to Speak</button>
+        <button id="downloadButton" class="btn btn-download" onclick="downloadSpeech()">Download Speech</button>
+        </div>
+        <p class="warning-text"></p>
+    </div>
+    
+</body>
+</html>
